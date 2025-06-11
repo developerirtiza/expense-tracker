@@ -8,35 +8,43 @@
       content="This page is an expense tracker which helps keep track of expenses"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="style.css" />
-
-    <!-- Link to external JavaScript file -->
     <script src="main.js" defer></script>
-
     <title>Expense Tracker</title>
   </head>
   <body>
-    <!-- Header section -->
     <header class="header">
-      <h1 class="header__h1">Expense Trakcer</h1>
-      <!-- Typo here, consider fixing to "Tracker" -->
+      <h1 class="header__h1">Expense Tracker</h1>
     </header>
 
-    <!-- Main section with inputs and buttons -->
     <main class="main">
-      <!-- Input field to enter amount -->
-      <input type="text" placeholder="Add Money" class="main__add-money" />
+      <!-- Balance Display -->
+      <h2 class="main__balance">Balance: $0.00</h2>
 
-      <!-- Button to add income -->
-      <button class="main__add-income">Add Income</button>
+      <!-- Input Form -->
+      <div class="main__form">
+        <input
+          type="number"
+          class="main__input-amount"
+          placeholder="Enter amount"
+        />
+        <input
+          type="text"
+          class="main__input-description"
+          placeholder="Enter description"
+        />
+        <div>
+          <button class="main__add-income">Add Income</button>
+          <button class="main__add-expense">Add Expense</button>
+        </div>
+      </div>
 
-      <!-- Button to add expense -->
-      <button class="main__add-expense">Add Expense</button>
+      <!-- Transaction History -->
+      <div class="main__transactions">
+        <ul class="main__transaction-list"></ul>
+      </div>
     </main>
 
-    <!-- Footer section (currently empty) -->
     <footer class="footer"></footer>
   </body>
 </html>

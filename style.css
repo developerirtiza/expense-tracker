@@ -1,5 +1,56 @@
+/* ===== CSS RESET ===== */
+/* Remove default margin/padding and set box sizing for consistent layout */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* ===== BODY STYLES ===== */
+/* General layout and typography */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===== HEADER STYLES ===== */
+/* Main heading styling */
+.header__h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== MAIN SECTION STYLING ===== */
+/* Input field for adding money */
+.main__add-money {
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+/* Button styling for income and expense actions */
+.main__add-income,
+.main__add-expense {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: whitesmoke;
+}
+
+/* Green background for Add Income button */
+.main__add-income {
+  background-color: #4caf50;
+}
+
+/* Red background for Add Expense button */
+.main__add-expense {
+  background-color: #f44336;
 }
